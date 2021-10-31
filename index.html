@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>	
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+  <link rel="stylesheet" href="css/calc.css">
+</head>
+<body>
+<section class="calc-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="calc-title">
+          <h2 class="calc-title__main">Не знаете какой тариф выбрать? Это просто!</h2>
+          <p class="calc-title__subscribe">
+            Выберите параметры вашего бизнеса и Калькулятор автоматически подберет подходящий тариф.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="culc-slider1 culc-slider">
+          <h3 class="culc-slider__title">Система налогообложения</h3>
+            <div class="slider1 slider">
+            </div>
+        </div>
+        <div class="culc-slider2 culc-slider">
+          <h3 class="culc-slider__title">Количество операций по расчётному счёту</h3>
+            <div class="slider2 slider">
+            </div>
+        </div>
+        <div class="culc-slider3 culc-slider">
+          <h3 class="culc-slider__title">Количество сотрудников</h3>
+            <div class="slider3 slider">
+            </div>
+        </div>
+        <div class="chx-block">
+          <h3 class="culc-slider__title">Выберите дополнительные услуги</h3>
+          <ul class="d-flex flex-column flex-wrap chx-block__list">
+            <li class="chx-block__item">
+              <input type="checkbox" id="checkbox1" class="checkbox">
+              <label for="checkbox1">
+                Проводим сверки с налоговой и фондами
+              </label>
+            </li>
+            <li class="chx-block__item">
+              <input type="checkbox" id="checkbox2" class="checkbox">
+              <label for="checkbox2">
+                Проверяем контрагентов
+              </label>
+            </li>
+            <li class="chx-block__item">
+              <input type="checkbox" id="checkbox3" class="checkbox">
+              <label for="checkbox3">
+                Помогает Бизнес-ассистент
+              </label>
+            </li>
+            <li class="chx-block__item">
+              <input type="checkbox" id="checkbox4" class="checkbox">
+              <label for="checkbox4">
+                Юридически сопровождаем
+              </label>
+            </li>
+            <li class="chx-block__item">
+              <input type="checkbox" id="checkbox5" class="checkbox">
+              <label for="checkbox5">
+                Минимизируем налоги
+              </label>
+            </li>
+            <li class="chx-block__item">
+              <input type="checkbox" id="checkbox6" class="checkbox">
+              <label for="checkbox6">
+                Подключаем ЭЦП
+              </label>
+            </li>
+            <li class="chx-block__item">
+              <input type="checkbox" id="checkbox7" class="checkbox">
+              <label for="checkbox7">
+                Подключаем ЭДО
+              </label>
+            </li>
+            <li class="chx-block__item">
+              <input type="checkbox" id="checkbox8" class="checkbox">
+              <label for="checkbox8">
+                Подключаем к госзакупкам
+              </label>
+            </li>
+          </ul>
+        </div>	
+      </div>
+      <div class="col-lg-4">
+        <div class="tarif-block">
+          <div class="tarif-block__head">
+            <h3 class="tarif-block__title">Ваш тариф</h3>
+            <div class="tarif-block__link d-flex">
+              <a href="#">Подробнее о тарифах </a>
+              <img src="img/arrow.png" alt="arrow" class="img-fluid">
+            </div>							
+          </div>
+          <div class="culc-slider4">
+              <div class="slider4">
+              </div>
+            </div>
+            <div class="tarif-block__footer">
+              <h3>Стоимость обслуживания</h3>
+              <span>6 000 ₽/мес</span>
+              <p>
+              + дополнительные услуги<br> 6 700 ₽/мес
+              </p>
+              <button type="button" class="opener">Оставить заявку</button>
+              <div class="popup-window">
+                <div class="popup-box d-flex flex-column" id="popup-box">
+                    <div class="box-modal_close arcticmodal-close">X</div>
+                    <h3>Отправить запрос</h3>
+                    <p>Рады связаться с вами в рабочее время</p>
+                    <form action="#" class="modal-form">
+                      <input type="text" placeholder="Введите Ваше имя" class="input-name input">
+                      <input type="tel" placeholder="Телефон для связи" class="input-phone input">
+                      <input type="text" placeholder="Комментарий" class="input-comment input">
+                      <button type="submit" class="form-button">Отправить заявку</button>
+                      <input type="checkbox" id="checkbox9" class="checkbox">
+                  <label for="checkbox9">
+                    Я принимаю условия передачи информации
+                  </label>
+                </form>
+                <p class="p-time">Время работы компании</p>
+                <p class="p-count">9:00 до 21:00 пн-сб</p>
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+<script src="js/calc.js"></script>
+</body>
+</html>
